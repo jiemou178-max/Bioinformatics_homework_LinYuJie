@@ -1,0 +1,59 @@
+日期：2026.8.30    对话模型：deepseek v4-flash
+
+一
+me：我是一名学生，需要完成《生物信息学》课程的作业，现在给你上传了一张截图，里面是其中的一个任务，帮我梳理一下里面的步骤如何操作
+
+ds：好的，我来帮你梳理这份《生物信息学》作业中的任务具体如何操作
+
+安装agent并创建首个prompt log entry
+目标：建立版本控制、安装AI辅助编程工具，并记录第一次使用AI的过程。
+
+4.1 GitHub
+注册GitHub账号，创建仓库，命名格式 Bioinformatics_homework_Yourname_ID（替换为你的姓名和学号/ID）。
+
+生成个人访问令牌（Personal Access Token, 经典或Fine-grained），保存好。
+
+后续EasyMultiProfiler-Web登录可能需要用到仓库链接+token。
+
+4.2 Hermes-agent & Hermes WebUI
+按照GitHub仓库的README安装（可能需要Python环境、pip安装等）。
+
+如果遇到网络问题，可尝试镜像源或离线安装。
+
+安装后验证是否能启动agent和WebUI。
+
+4.3 Codex（ChatGPT Codex）
+实际上是指OpenAI的Codex或现在ChatGPT的代码解释器/高级数据分析功能。你只需确保能使用ChatGPT Plus或Codex界面，用于辅助生成代码。
+
+4.4 DeepSeek API 或 NVIDIA API
+注册DeepSeek平台，充值10元（用于后续课程访问），获取API key。或注册NVIDIA的API（如果老师允许）。
+
+保存API key，后续在agent配置中使用。
+
+prompt log entry：你需要新建一个日志文件（如 prompt_log.md），记录你第一次使用AI（例如用ChatGPT帮你安装Hermes或写某个代码）的完整过程：
+
+日期、使用的AI工具、你的提问、AI回复、你的验证（是否成功，如何修改）。
+
+这是为了培养你规范记录AI辅助科研的习惯。
+
+二
+me：好的，我现在上传hermes-agent的README文件给你，读完后教我怎么安装。需要注意的是：我使用windows11系统，最好不使用WSL
+
+ds：好的，我仔细看了你上传的 hermes-agent README 文件。这份文档是官方英文版的精准翻译，安装逻辑非常清晰。
+
+针对作业 4.2（安装 Hermes-agent 和 Hermes WebUI），我帮你把安装思路拆解为核心安装和关键配置两个层面，并给出具体的执行策略。
+
+第一步：安装 Hermes-agent（核心代理）
+README 给出了两条官方一键安装命令，根据你的操作系统windows11，你需要以管理员身份打开 PowerShell，输入并运行：
+	iex (irm https://hermes-agent.nousresearch.com/install.ps1)
+
+安装后尝试输入：hermes # 输入这条命令，如果能弹出对话交互界面，说明安装成功
+
+第二步：关键配置 —— 接入作业要求的 API
+输入并运行：
+	hermes model
+按提示选择 provider（比如 deepseek 或 openai 兼容格式），输入你的 API Key 和模型名（如 deepseek-chat）
+配置完成后，在终端里输入 hermes，随便问一句“Hello”，如果能正常回复，说明代理 + LLM 链路已经通了
+
+如果你在执行 curl 时报错网络不通，或者执行 hermes setup 时不知道怎么填模型选项，随时把具体的报错贴给我，我可以逐句教你改。先去试试一键安装命令吧！
+
