@@ -1,0 +1,78 @@
+{
+  "success": true,
+  "user_id": "O36JHsL73YXPMxKn2OVGDTd1",
+  "events": [
+    {
+      "event_type": "api_call",
+      "path": "/llm/openrouter_verified",
+      "method": "GET",
+      "total_ms": 68,
+      "backend_ms": 19.3,
+      "case_id": "course_microbiome_16s",
+      "experiment": null,
+      "user_id": "O36JHsL73YXPMxKn2OVGDTd1",
+      "role": "local",
+      "ts": "2026-09-27T23:33:45.043+0800"
+    },
+    {
+      "event_type": "api_call",
+      "path": "/clinical/vars_standalone/O36JHsL73YXPMxKn2OVGDTd1",
+      "method": "GET",
+      "total_ms": 30,
+      "backend_ms": 3.2,
+      "case_id": "course_microbiome_16s",
+      "experiment": null,
+      "user_id": "O36JHsL73YXPMxKn2OVGDTd1",
+      "role": "local",
+      "ts": "2026-09-27T23:33:45.312+0800"
+    },
+    {
+      "event_type": "api_call",
+      "path": "/import",
+      "method": "POST",
+      "total_ms": 5297,
+      "backend_ms": 4173.5,
+      "case_id": "course_microbiome_16s",
+      "experiment": null,
+      "user_id": "O36JHsL73YXPMxKn2OVGDTd1",
+      "role": "local",
+      "ts": "2026-09-27T23:34:58.407+0800"
+    },
+    {
+      "event_type": "api_call",
+      "path": "/clinical/vars_standalone/O36JHsL73YXPMxKn2OVGDTd1",
+      "method": "GET",
+      "total_ms": 33,
+      "backend_ms": 3.5,
+      "case_id": "course_microbiome_16s",
+      "experiment": null,
+      "user_id": "O36JHsL73YXPMxKn2OVGDTd1",
+      "role": "local",
+      "ts": "2026-09-27T23:34:58.509+0800"
+    },
+    {
+      "event_type": "api_call",
+      "path": "/prepare/snapshots/O36JHsL73YXPMxKn2OVGDTd1/week5_homework2",
+      "method": "GET",
+      "total_ms": 17,
+      "backend_ms": 0.7,
+      "case_id": "course_microbiome_16s",
+      "experiment": "week5_homework2",
+      "user_id": "O36JHsL73YXPMxKn2OVGDTd1",
+      "role": "local",
+      "ts": "2026-09-27T23:34:59.385+0800"
+    },
+    {
+      "event_type": "api_call",
+      "path": "/prepare/snapshots/O36JHsL73YXPMxKn2OVGDTd1/week5_homework2",
+      "method": "GET",
+      "total_ms": 90,
+      "backend_ms": 0.6,
+      "case_id": "course_microbiome_16s",
+      "experiment": "week5_homework2",
+      "user_id": "O36JHsL73YXPMxKn2OVGDTd1",
+      "role": "local",
+      "ts": "2026-09-27T23:35:03.776+0800"
+    }
+  ]
+}
