@@ -1,0 +1,30 @@
+{
+  "success": true,
+  "user_id": "E6G1qOfGXtPyTJBFfxJppmsV",
+  "events": [
+    {
+      "event_type": "api_call",
+      "path": "/llm/openrouter_verified",
+      "method": "GET",
+      "total_ms": 1848,
+      "backend_ms": 165.7,
+      "case_id": "course_microbiome_16s",
+      "experiment": null,
+      "user_id": "E6G1qOfGXtPyTJBFfxJppmsV",
+      "role": "local",
+      "ts": "2026-11-10T20:54:05.275+0800"
+    },
+    {
+      "event_type": "api_call",
+      "path": "/clinical/vars_standalone/E6G1qOfGXtPyTJBFfxJppmsV",
+      "method": "GET",
+      "total_ms": 88,
+      "backend_ms": 54.2,
+      "case_id": "course_microbiome_16s",
+      "experiment": null,
+      "user_id": "E6G1qOfGXtPyTJBFfxJppmsV",
+      "role": "local",
+      "ts": "2026-11-10T20:54:05.607+0800"
+    }
+  ]
+}
